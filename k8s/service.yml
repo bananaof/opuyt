@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: opuyt
+  name: bananbgd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "opuyt"
+  - name: "bananbgd"
     port: 8080
   selector:
-    app: opuyt
+    app: bananbgd
