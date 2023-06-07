@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: opuyt
+  name: bananbgd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: opuyt
+      app: bananbgd
   template:
     metadata:
       labels:
-        app: opuyt
+        app: bananbgd
     spec:
       containers:
-      - image: okteto.dev/opuyt:latest
-        name: opuyt
+      - image: okteto.dev/bananbgd:latest
+        name: bananbgd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "9e9e4d52-9393-4fac-bda9-67089d1c21f8"
+          value: "4bc137b7-3da6-49ed-a1a4-bb2da42dbda8"
         - name: Vless_Path
-          value: "/vlkjhy65fy"
+          value: "/vlaassd32et"
         - name: Vmess_UUID
-          value: "9e9e4d52-9393-4fac-bda9-67089d1c21f8"
+          value: "4bc137b7-3da6-49ed-a1a4-bb2da42dbda8"
         - name: Vmess_Path
-          value: "/vmhftrxdt76hgf"
+          value: "/vmqsfghtQ"
         - name: Share_Path
           value: "/v2link"
